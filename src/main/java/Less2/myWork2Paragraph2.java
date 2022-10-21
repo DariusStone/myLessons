@@ -1,24 +1,16 @@
 package Less2;
 
-import java.util.Scanner;
-
 public class myWork2Paragraph2 {
     public static void main(String[] args) {
-        positiveOrNegativeSwitch(1);
+        positiveOrNegative(6);
     }
-
-    static boolean positiveOrNegativeSwitch(int a) {
-        String answer = switch (a) {
-            case a >= 0 -> positive
-            {
-            }
-
-        } switch (a) {
-
-            default:
-                Answer = "Incorrect";
-                Scanner scanner = new Scanner(Answer);
-                System.out.println(Answer);
-        }
+/*2. Написать метод, которому в качестве параметра
+    передается целое число, метод должен напечатать в консоль,
+    положительное ли число передали или отрицательное.
+    Замечание: ноль считаем положительным числом.*/
+    private static void positiveOrNegative(int digit) {
+        if (digit >= 0) System.out.println("Positive");
+        else System.out.println("Negative");
     }
 }
+
